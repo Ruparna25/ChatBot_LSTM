@@ -7,5 +7,24 @@ Bidirectional LSTMs have two recurrent components, a forward recurrent component
 
 Dataset –
 Cornell-Movie-Dialog Corpus is composed of movie dialog, collected from movies of different genres. Below is a summary of the data.
-movie_lines.txt – Contains xx number of lines from movies
-movie_conversions.txt – Contains xx number of conversations  
+movie_lines.txt – Contains 304713 number of lines from movies
+movie_conversions.txt – Contains 83097 number of conversations
+
+- movie_lines.txt
+	- contains the actual text of each utterance
+	- fields:
+		- lineID
+		- characterID (who uttered this phrase)
+		- movieID
+		- character name
+		- text of the utterance
+
+- movie_conversations.txt
+	- the structure of the conversations
+	- fields
+		- characterID of the first character involved in the conversation
+		- characterID of the second character involved in the conversation
+		- movieID of the movie in which the conversation occurred
+		- list of the utterances that make the conversation, in chronological 
+			order: ['lineID1','lineID2',�,'lineIDN']
+			has to be matched with movie_lines.txt to reconstruct the actual content
