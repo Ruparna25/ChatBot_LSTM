@@ -5,10 +5,9 @@ Bidirectional LSTMs have two recurrent components, a forward recurrent component
 
 ![image](https://user-images.githubusercontent.com/29209042/162600791-e7c42b09-0ab0-499c-a35e-9c22222e4cb0.png)
 
-Dataset –
+# Dataset –
 Cornell-Movie-Dialog Corpus is composed of movie dialog, collected from movies of different genres. Below is a summary of the data.
-movie_lines.txt – Contains 304713 number of lines from movies
-movie_conversions.txt – Contains 83097 number of conversations
+movie_lines.txt – Contains 304713 number of lines from movies.
 
 - movie_lines.txt
 	- contains the actual text of each utterance
@@ -19,6 +18,8 @@ movie_conversions.txt – Contains 83097 number of conversations
 		- character name
 		- text of the utterance
 
+movie_conversions.txt – Contains 83097 number of conversations.
+
 - movie_conversations.txt
 	- the structure of the conversations
 	- fields
@@ -26,5 +27,9 @@ movie_conversions.txt – Contains 83097 number of conversations
 		- characterID of the second character involved in the conversation
 		- movieID of the movie in which the conversation occurred
 		- list of the utterances that make the conversation, in chronological 
-			order: ['lineID1','lineID2',�,'lineIDN']
+			order: ['lineID1','lineID2','lineIDN']
 			has to be matched with movie_lines.txt to reconstruct the actual content
+
+# Relevant file
+main.ipynb is the file which contains the model training and ChatBot implementation using Simple Interactive Widgets
+
